@@ -1,7 +1,7 @@
 # TODO
 
 - **Mobile Navigation**
-   - [ ] Take a call on the need for navigation in Mobile.
+   - [x] Take a call on the need for navigation in Mobile.
  - **All Sections**
    - [ ] Animate the headings on scroll
    - [ ] add some animation to other objects, try what works
