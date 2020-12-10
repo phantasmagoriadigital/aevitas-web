@@ -1,0 +1,402 @@
+// VOLTAS DESIGN SYSTEM (VDS) V1.0.0
+// BOOTSTRAP VARIABLE OVERRIDES
+
+// $grid-breakpoints: (
+// // sm: 500px,
+// // xxl: 1440px
+// );
+
+// $container-max-widths: (
+// // sm: 480px,
+// // xxl: 1400px
+// );
+
+// Modify the default spacers
+$spacer: 1rem;
+$spacers: (
+    1: (
+        $spacer * 0.5,
+    ),
+    2: $spacer,
+    3: (
+        $spacer * 1.5,
+    ),
+    4: (
+        $spacer * 2,
+    ),
+    5: (
+        $spacer * 3,
+    ),
+    6: (
+        $spacer * 5,
+    ),
+    t1: (
+        ($spacer/4) * 1,
+    ),
+    t2: (
+        ($spacer/4) * 2,
+    ),
+    t3: (
+        ($spacer/4) * 4,
+    ),
+    t32: (
+        ($spacer/4) * 6,
+    ),
+    t4: (
+        ($spacer/4) * 8,
+    ),
+    t5: (
+        ($spacer/4) * 16,
+    ),
+    t54: (
+        ($spacer/4) * 24,
+    ),
+    t6: (
+        ($spacer/4) * 32,
+    ),
+    t7: (
+        ($spacer/4) * 16,
+    ),
+    t8: (
+        ($spacer/4) * 128,
+    ),
+);
+
+// $primary: var(--colors-voltas-primary);
+
+// globally disbale rounded corners
+$enable-rounded: false;
+
+// make font-sizes responsive
+$enable-responsive-font-sizes: false;
+
+//
+// BOOTSTRAP COMPONENTS
+//
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+// @import "../../node_modules/bootstrap/scss/input-group";
+// @import "../../node_modules/bootstrap/scss/custom-forms";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+//  @import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/jumbotron";
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/media";
+// @imp ort "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+// @import "../../node_modules/bootstrap/scss/toasts";
+// @import "../../node_modules/bootstrap/scss/modal";
+// @import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/print";
+
+// Project Styles
+
+// color styles
+$color-color-brand-blue: rgba(27, 43, 75, 1);
+$color-color-brand-gold: rgba(196, 153, 103, 1);
+$color-color-ui-light-grey: rgba(240, 240, 240, 1);
+$color-color-ui-dark-grey: rgba(156, 161, 171, 1);
+$color-color-ui-white: rgba(255, 255, 255, 1);
+$color-color-ui-black: rgba(0, 0, 0, 1);
+$color-color-ui-dark-blue: rgba(24,38,66,1);
+
+// background color styles
+.bg-color-brand-blue {
+    background-color: $color-color-brand-blue;
+}
+.bg-color-brand-gold {
+    background-color: $color-color-brand-gold;
+}
+.bg-color-ui-light-grey {
+    background-color: $color-color-ui-light-grey;
+}
+.bg-color-ui-dark-grey {
+    background-color: $color-color-ui-dark-grey;
+}
+.bg-color-ui-white {
+    background-color: $color-color-ui-white;
+}
+.bg-color-ui-black {
+    background-color: $color-color-ui-black;
+}
+.bg-color-ui-dark-blue {
+    background-color: $color-color-ui-dark-blue;
+}
+
+// font styles
+@mixin font-text-body {
+    font-size: 16px;
+    font-family: "Kievit OT";
+    font-weight: normal;
+}
+@mixin font-text-label {
+    font-size: 14px;
+    font-family: "Kievit OT";
+    font-weight: normal;
+}
+@mixin font-heading-heading-02-l-xl {
+    font-size: 28px;
+    font-family: "Kievit OT";
+    font-weight: normal;
+}
+@mixin font-heading-heading-01-l-xl {
+    font-size: 49px;
+    font-family: "Kievit OT";
+    font-weight: normal;
+}
+@mixin font-heading-heading-04-l-xl {
+    font-size: 16px;
+    font-family: "Kievit OT";
+    font-weight: normal;
+    line-height: 21px;
+}
+@mixin font-heading-heading-02-display-l-xl {
+    font-size: 28px;
+    font-family: "Kievit OT";
+    font-weight: 500;
+}
+@mixin font-heading-heading-04-display-l-xl {
+    font-size: 16px;
+    font-family: "Kievit OT";
+    font-weight: bold;
+    line-height: 21px;
+}
+@mixin font-heading-heading-03-l-xl {
+    font-size: 20px;
+    font-family: "Kievit OT";
+    font-weight: 500;
+    line-height: 21px;
+}
+@mixin font-text-body-spaced {
+    font-size: 16px;
+    font-family: "Kievit OT";
+    font-weight: normal;
+    line-height: 24px;
+}
+
+h1 {
+    @include font-heading-heading-01-l-xl();
+}
+
+h2 {
+    @include font-heading-heading-02-l-xl();
+    &.display {
+        @include font-heading-heading-02-display-l-xl();
+    }
+}
+
+h3 {
+    @include font-heading-heading-03-l-xl();
+}
+
+h4 {
+    @include font-heading-heading-04-l-xl();
+    &.display {
+        @include font-heading-heading-04-display-l-xl();
+    }
+}
+p {
+    @include font-text-body();
+    &.loose {
+        @include font-text-body-spaced();
+    }
+    &.label {
+        @include font-text-label();
+    }
+}
+
+.ds-navbar {
+    background-color: $color-color-brand-blue;
+    .ds-nav-item {
+        color: $color-color-ui-white;
+        @include font-text-label();
+        text-transform: uppercase;
+        .ds-nav-link {
+            color: $color-color-ui-white;
+        }
+    }
+}
+.ds-hero-header {
+    // background-color: $color-color-brand-blue;
+    h2 {
+        color: $color-color-ui-white;
+        &.display {
+            color: $color-color-ui-white;
+        }
+    }
+    h1 {
+        color: $color-color-brand-gold;
+    }
+    p {
+        color: $color-color-ui-white;
+    }
+    &.--footer {
+        color: $color-color-ui-white!important;
+    }
+    .ds-hero-illustration {
+        margin-top: -2rem;
+        div {
+            border-bottom: $color-color-brand-gold solid 0.125rem;
+            position: relative;
+            img {
+                position: relative;
+                left: 48.71%;
+                @include media-breakpoint-only(md) {
+                    left: 15%;
+                }
+                @include media-breakpoint-down(sm) {
+                    left: 0%;
+                    width: 100%;
+                }
+                // right: 5.06%;
+                // top: -10.24%;
+                // bottom: 0%;
+            }
+        }
+    }
+    .ds-section-heading--light {
+        p {
+            color: $color-color-ui-black;
+            &.label {
+                color: $color-color-ui-dark-grey;
+            }
+        }
+        h2 {
+            color: $color-color-brand-blue;
+        }
+    }
+    .ds-section-heading--dark {
+        h1 {
+            color: $color-color-ui-white;
+        }
+        border-bottom: $color-color-ui-white solid 0.0625rem;
+    }
+}
+.ds-card {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    &--solutions {
+        h4,p {
+            color: $color-color-ui-white;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0rem;
+        }
+    }
+    &--team {
+        border: none;
+        background-color: $color-color-ui-light-grey;
+        h4,
+        p {
+            color: $color-color-ui-black;
+        }
+    }
+    &-row {
+        border-bottom: $color-color-brand-blue 0.0625rem solid;
+        padding-bottom: 2rem;
+    }
+    &--transparent {
+        border: none;
+        h3 {
+            margin-top: 1.5rem;
+        }
+        .ds-card-source {
+            margin-top: 1.5rem;
+            @include media-breakpoint-down (sm) {
+                margin-bottom: 1.5rem;;
+            }
+            h3 {
+                margin-top: 0rem;
+            }
+        }
+    }
+}
+.ds-carousel {
+    // TODO convert spacings to variables
+    padding-top: 4rem;
+    h4 {
+        color: $color-color-ui-white;
+    }
+    p {
+        // TODO convert spacings to variables
+        margin-top: 2rem;
+    }
+}
+.ds-blog {
+    border-bottom: $color-color-brand-blue 0.0625rem solid;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    .ds-blog-preview-lg {
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2rem;
+        }
+    }
+    .ds-blog-preview-list {
+        .ds-blog-preview-sm {
+            border-bottom: $color-color-ui-black 0.0625rem solid;
+            margin-bottom: 0.5rem;
+            h3,
+            h4 {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}
+form {
+    input, textarea {
+        background-color: $color-color-ui-dark-blue !important;
+        border: none !important;
+        &::placeholder {
+            @include font-text-label();
+            color: $color-color-ui-white !important;
+            opacity: .5 !important;
+        }
+    }
+    &.ds-contact-form {
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2rem;
+        }
+    }
+    .ds-btn {
+        color: $color-color-ui-black;
+    background-color: $color-color-ui-white;
+    border: 0!important;
+    @include font-text-label();
+    }
+}
+.--no-border {
+    border: 0 !important;
+}
+hr {
+    border-color: $color-color-ui-white;
+}
+.swiper-wrapper {
+    height: unset!important;
+}

@@ -1,0 +1,25 @@
+# TODO
+
+- **Mobile Navigation**
+   - [ ] Take a call on the need for navigation in Mobile.
+ - **All Sections**
+   - [ ] Animate the headings on scroll
+   - [ ] add some animation to other objects, try what works
+ - **All carousels/ sliders**
+   - [ ] Implement controls and indicators appropriately
+- **About Section**
+   - [ ] Fix overtitle. currently says team
+   - [ ] Fix flower image and responsiveness
+ - **Why Aevitas Section**
+   - [ ] Images for all slides are the same in Figma, ask UC for final images
+ - **Team Section**
+   - [ ] Team member section should convert into a slider **only on mobile**, 
+   - [ ] Image of Varun is missing
+   - [ ] Main image needs to be added
+- **Blog Section**
+   - [ ] Import blog articles from Blogspot using API
+ - **News Section**
+   - [ ] Finalize news item content with UC, any initial content to go live with?
+ - **Contact US**
+   - [ ] Email address that receives the contact form.
+   - [ ] Research simple form plugin for static websites
