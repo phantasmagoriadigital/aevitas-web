@@ -8,7 +8,7 @@
  - **All carousels/ sliders**
    - [ ] Implement controls and indicators appropriately
 - **About Section**
-   - [ ] Fix overtitle. currently says team
+   - [x] Fix overtitle. currently says team
    - [ ] Fix flower image and responsiveness
  - **Why Aevitas Section**
    - [ ] Images for all slides are the same in Figma, ask UC for final images

@@ -4,7 +4,7 @@ static_sites:
   - name: frontend
     environment_slug: html
     github:
-      repo: phantasmagoriadigital/aevitas_web
+      repo: phantasmagoriadigital/aevitas-web
       branch: main
       deploy_on_push: true
     source_dir: www
