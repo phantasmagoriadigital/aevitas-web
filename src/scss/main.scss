@@ -126,6 +126,7 @@ $color-color-ui-dark-grey: rgba(156, 161, 171, 1);
 $color-color-ui-white: rgba(255, 255, 255, 1);
 $color-color-ui-black: rgba(0, 0, 0, 1);
 $color-color-ui-dark-blue: rgba(24,38,66,1);
+$color-color-ui-darkgrey-1: rgba(16,20,21,1);
 
 // background color styles
 .bg-color-brand-blue {
@@ -149,8 +150,41 @@ $color-color-ui-dark-blue: rgba(24,38,66,1);
 .bg-color-ui-dark-blue {
     background-color: $color-color-ui-dark-blue;
 }
+.bg-color-ui-darkgrey-1 {
+    background-color: $color-color-ui-darkgrey-1;
+}
 
 // font styles
+
+@font-face {
+    font-family: 'Kievit OT';
+    src: url('/font/KievitOT-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/font/KievitOT-Regular.otf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kievit OT';
+    src: url('/font/KievitOT-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/font/KievitOT-Light.otf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kievit OT';
+    src: url('/font/KievitOT-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/font/KievitOT-Medium.otf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kievit OT';
+    src: url('/font/KievitOT-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/font/KievitOT-Bold.otf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 700;
+    font-style: normal;
+}
+
 @mixin font-text-body {
     font-size: 16px;
     font-family: "Kievit OT";
@@ -185,7 +219,7 @@ $color-color-ui-dark-blue: rgba(24,38,66,1);
 @mixin font-heading-heading-04-display-l-xl {
     font-size: 16px;
     font-family: "Kievit OT";
-    font-weight: bold;
+    font-weight: 700;
     line-height: 21px;
 }
 @mixin font-heading-heading-03-l-xl {
@@ -399,4 +433,15 @@ hr {
 }
 .swiper-wrapper {
     height: unset!important;
+}
+.ds-img-about {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+    right: 0;
+    @include media-breakpoint-down(sm) {
+        right: -80%;
+    }
 }

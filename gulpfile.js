@@ -56,6 +56,17 @@
     }
     exports.images = images;
 
+    /**************** fonts task ****************/
+    function fonts() {
+
+        return gulp.src(dir.src + 'fonts/**/*')
+            .pipe(newer(dir.build + 'font/'))
+            .pipe(size({ showFiles: true }))
+            .pipe(gulp.dest(dir.build + 'font/'));
+
+    }
+    exports.fonts = fonts;
+
 
 
 
