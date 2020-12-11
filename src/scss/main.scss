@@ -266,9 +266,13 @@ p {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .ds-navbar {
     background-color: $color-color-brand-blue;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1000;
     .ds-nav-item {
