@@ -181,6 +181,6 @@
     task(watch);
     /**************** default task ****************/
     // exports.default = gulp.series(exports.css, watch, server);                 
-    exports.default = gulp.series(html, css, js, watch, server);
+    exports.default = gulp.series(html, css, js, watch, images);
 
 })();

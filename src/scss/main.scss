@@ -268,6 +268,9 @@ p {
 
 .ds-navbar {
     background-color: $color-color-brand-blue;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     .ds-nav-item {
         color: $color-color-ui-white;
         @include font-text-label();
@@ -445,3 +448,9 @@ hr {
         right: -80%;
     }
 }
+// .swiper-pagination {
+//     bottom: -32px!important;
+//     .swiper-pagination-bullet-active {
+//         color: $color-color-brand-gold!important;
+//     }
+// }
