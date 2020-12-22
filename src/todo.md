@@ -3,19 +3,19 @@
 - **Mobile Navigation**
    - [x] Take a call on the need for navigation in Mobile.
  - **All Sections**
-   - [ ] Animate the headings on scroll
+   - [x] Animate the headings on scroll
    - [ ] add some animation to other objects, try what works
  - **All carousels/ sliders**
    - [ ] Implement controls and indicators appropriately
 - **About Section**
    - [x] Fix overtitle. currently says team
-   - [ ] Fix flower image and responsiveness
+   - [x] Fix flower image and responsiveness
  - **Why Aevitas Section**
    - [ ] Images for all slides are the same in Figma, ask UC for final images
  - **Team Section**
    - [ ] Team member section should convert into a slider **only on mobile**, 
-   - [ ] Image of Varun is missing
-   - [ ] Main image needs to be added
+   - [x] Image of Varun is missing
+   - [x] Main image needs to be added
 - **Blog Section**
    - [ ] Import blog articles from Blogspot using API
  - **News Section**
@@ -23,3 +23,4 @@
  - **Contact US**
    - [ ] Email address that receives the contact form.
    - [ ] Research simple form plugin for static websites
+   - [x] Aevitas contact number to be updated to 9321443733
