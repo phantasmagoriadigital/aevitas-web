@@ -214,7 +214,7 @@ $color-color-ui-darkgrey-1: rgba(16,20,21,1);
 @mixin font-heading-heading-02-display-l-xl {
     font-size: 28px;
     font-family: "Kievit OT";
-    font-weight: 500;
+    font-weight: normal;
 }
 @mixin font-heading-heading-04-display-l-xl {
     font-size: 16px;
@@ -458,3 +458,33 @@ hr {
 //         color: $color-color-brand-gold!important;
 //     }
 // }
+.swiper-pagination-bullet-active {
+    background: $color-color-brand-gold!important;
+}
+.swiper-button-prev:after {
+    content: '< Previous'!important;
+}
+.swiper-button-next:after {
+    content: '/ Next >'!important;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 16px !important;
+    font-family: "Kievit OT" !important;
+    font-weight: 400 !important;
+    line-height: 21px;
+    text-transform: capitalize!important;
+
+}
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 100%!important;
+    width: unset!important;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-color-ui-white!important;
+}
