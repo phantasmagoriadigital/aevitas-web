@@ -389,6 +389,9 @@ html {
         // TODO convert spacings to variables
         margin-top: 2rem;
     }
+    &-image {
+        object-fit: cover;
+    }
 }
 .ds-blog {
     border-bottom: $color-color-brand-blue 0.0625rem solid;
@@ -460,6 +463,10 @@ hr {
 // }
 .swiper-pagination-bullet-active {
     background: $color-color-brand-gold!important;
+    
+}
+.swiper-pagination-bullets {
+    bottom: 0px!important;
 }
 .swiper-button-prev:after {
     content: '< Previous'!important;
@@ -476,15 +483,58 @@ hr {
 
 }
 .swiper-button-prev, .swiper-button-next {
-    position: absolute;
-    top: 100%!important;
+    position: unset!important;
+    top:unset!important;
+    bottom: -1%!important;
     width: unset!important;
     height: var(--swiper-navigation-size);
     margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
     z-index: 10;
     cursor: pointer;
     display: flex;
-    align-items: center;
+    align-items: flex-end!important;
     justify-content: center;
     color: $color-color-ui-white!important;
+}
+.ds-swiper-button-dark {
+    color: $color-color-brand-blue!important;
+}
+.swiper-pagination-bullets {
+    width: unset!important;
+}
+.ds-footer {
+    .ds-footer-logo {
+        width: unset;
+    }
+    .ds-footer-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include media-breakpoint-down(sm) {
+            margin-top: 12px;
+        }
+        .ds-footer-link_item {
+            a{
+                @include font-text-label(); 
+                color: $color-color-ui-white;
+                &:hover {
+                    text-decoration: none;
+                } 
+            }
+        }
+    }
+    p {
+        margin-bottom: 0px;
+    }
+}
+.ds-swiper-navigation {
+    justify-content: flex-end;
+    margin-top: -5px;
+}
+.ds-swiper-navigation--why {
+    justify-content: flex-end;
+    margin-bottom: -4px;
+}
+.ds-privacy-policy {
+    color:$color-color-brand-blue;
 }

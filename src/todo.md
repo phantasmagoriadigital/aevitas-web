@@ -2,10 +2,11 @@
 
 - **Mobile Navigation**
    - [x] Take a call on the need for navigation in Mobile.
-   - [] Reduce social icon sizes
+   - [x] Reduce social icon sizes
+   - [x] Link social icons
  - **All Sections**
    - [x] Animate the headings on scroll
-   - [ ] add some animation to other objects, try what works
+   - [x] add some animation to other objects, try what works
    - [x] Title font weight lighter
  - **All carousels/ sliders**
    - [ ] Implement controls and indicators appropriately
@@ -15,7 +16,7 @@
    - [x] Fix overtitle. currently says team
    - [x] Fix flower image and responsiveness
  - **Why Aevitas Section**
-   - [] Change slider to only slide the text (image on the right stays the same). 
+   - [x] Change slider to only slide the text (image on the right stays the same). 
    - [] Indicators will come on the left like in solutions.
  - **Our Solutions**
    - [] Update swiper indicator design and align left below the cards
@@ -33,6 +34,9 @@
    - [ ] Research simple form plugin for static websites
    - [x] Aevitas contact number to be updated to 9321443733
    - [x] Aevitas email to be updated info@aevitascap.in
+ - **Footer**
+   - [x] Build the footer
+   - [x] Create a modal window/page for the content 
 
    
 
