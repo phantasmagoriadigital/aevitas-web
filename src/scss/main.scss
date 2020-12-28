@@ -370,11 +370,13 @@ html {
         }
         .ds-card-source {
             margin-top: 1.5rem;
+            align-items: baseline;
             @include media-breakpoint-down (sm) {
                 margin-bottom: 1.5rem;;
             }
             h3 {
                 margin-top: 0rem;
+                margin-left: 1rem;
             }
         }
     }
@@ -400,7 +402,7 @@ html {
     .ds-blog-preview-lg {
         a {
             color: $color-color-ui-black;
-            :hover {
+            &:hover {
                 text-decoration: none;
             }
         }
@@ -553,4 +555,12 @@ hr {
 }
 .ds-privacy-policy {
     color:$color-color-brand-blue;
+}
+.ds-card-source {
+    a {
+        color: $color-color-ui-black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
