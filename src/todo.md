@@ -9,7 +9,7 @@
    - [x] add some animation to other objects, try what works
    - [x] Title font weight lighter
  - **All carousels/ sliders**
-   - [ ] Implement controls and indicators appropriately
+   - [x] Implement controls and indicators appropriately
  - **Hero Header**
    - [x] Spacing between the text/illustration on mobile
 - **About Section**
@@ -17,15 +17,15 @@
    - [x] Fix flower image and responsiveness
  - **Why Aevitas Section**
    - [x] Change slider to only slide the text (image on the right stays the same). 
-   - [] Indicators will come on the left like in solutions.
+   - [x] Indicators will come on the left like in solutions.
  - **Our Solutions**
-   - [] Update swiper indicator design and align left below the cards
+   - [x] Update swiper indicator design and align left below the cards
  - **Team Section**
    - [ ] Team member section should convert into a slider **only on mobile**, 
    - [x] Image of Varun is missing
    - [x] Main image needs to be added
 - **Blog Section**
-   - [ ] Import blog articles from Blogspot using API
+   - [x] Import blog articles from Blogspot using API
    - [x] Update design if approved
  - **News Section**
    - [ ] Finalize news item content with UC, any initial content to go live with?
